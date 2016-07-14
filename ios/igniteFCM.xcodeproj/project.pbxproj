@@ -39,6 +39,7 @@
 		A04757401D370A9F007776D0 /* GoogleUtilities.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A047573C1D370A9F007776D0 /* GoogleUtilities.framework */; };
 		A04757431D370C28007776D0 /* FirebaseMessaging.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A04757411D370C28007776D0 /* FirebaseMessaging.framework */; };
 		A04757441D370C28007776D0 /* GoogleIPhoneUtilities.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A04757421D370C28007776D0 /* GoogleIPhoneUtilities.framework */; };
+		A0EA970E1D38391D0046AECC /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = A0EA970D1D38391D0046AECC /* GoogleService-Info.plist */; };
 		E5C6A029F36A4D52AF06B178 /* Octicons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 9D1BDF7F56F141BF8BF90DF3 /* Octicons.ttf */; };
 		E78B2ABC6A4649AD9AD6D0D5 /* libAirMaps.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 01EB2F4AB5D8479E98C2ADBC /* libAirMaps.a */; };
 		F0A81737756E4B9C8F4F4E19 /* libRNVectorIcons.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D889A8C2D6254DB182A8B16D /* libRNVectorIcons.a */; };
@@ -207,6 +208,7 @@
 		A04757411D370C28007776D0 /* FirebaseMessaging.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FirebaseMessaging.framework; sourceTree = "<group>"; };
 		A04757421D370C28007776D0 /* GoogleIPhoneUtilities.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = GoogleIPhoneUtilities.framework; sourceTree = "<group>"; };
 		A0EA96FD1D381F060046AECC /* Firebase.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Firebase.h; sourceTree = "<group>"; };
+		A0EA970D1D38391D0046AECC /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		A2A90DB656794C6EB96ED7E2 /* RNFIRMessaging.xcodeproj */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = "wrapper.pb-project"; name = RNFIRMessaging.xcodeproj; path = "../node_modules/react-native-fcm/ios/RNFIRMessaging.xcodeproj"; sourceTree = "<group>"; };
 		AF3B124D31434784B529A136 /* Entypo.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = Entypo.ttf; path = "../node_modules/react-native-vector-icons/Fonts/Entypo.ttf"; sourceTree = "<group>"; };
 		BEB3D43430F344688C80E929 /* MaterialIcons.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = MaterialIcons.ttf; path = "../node_modules/react-native-vector-icons/Fonts/MaterialIcons.ttf"; sourceTree = "<group>"; };
@@ -394,6 +396,7 @@
 		83CBB9F61A601CBA00E9B192 = {
 			isa = PBXGroup;
 			children = (
+				A0EA970D1D38391D0046AECC /* GoogleService-Info.plist */,
 				A0EA96FD1D381F060046AECC /* Firebase.h */,
 				A04757371D370A88007776D0 /* FirebaseAnalytics.framework */,
 				13B07FAE1A68108700A75B9A /* igniteFCM */,
@@ -747,6 +750,7 @@
 				80B3124B49094B7BAD8455D9 /* Foundation.ttf in Resources */,
 				31550AECDDDB49DF9F8C232F /* Ionicons.ttf in Resources */,
 				F3508532A6D74B039F421B68 /* MaterialIcons.ttf in Resources */,
+				A0EA970E1D38391D0046AECC /* GoogleService-Info.plist in Resources */,
 				E5C6A029F36A4D52AF06B178 /* Octicons.ttf in Resources */,
 				76EDB3A7748B46478EB2EFC8 /* Zocial.ttf in Resources */,
 			);
