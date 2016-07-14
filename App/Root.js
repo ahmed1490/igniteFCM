@@ -6,6 +6,7 @@ import Actions from './Actions/Creators'
 import Drawer from 'react-native-drawer'
 import DebugSettings from './Config/DebugSettings'
 import DrawerContent from './Components/DrawerContent'
+import FCM from 'react-native-fcm';
 // import './Config/PushConfig'
 
 // Styles
@@ -19,6 +20,28 @@ export default class Root extends React.Component {
   componentWillMount () {
     const { dispatch } = this.props.store
     dispatch(Actions.startup())
+
+    FCM.requestPermissions();
+    FCM.getFCMToken().then(token => {
+      console.log('token', token)
+      // store fcm token in your server
+    });
+    this.notificationUnsubscribe = FCM.on('notification', (notif) => {
+      // there are two parts of notif. notif.notification contains the notification payload, notif.data contains data payload
+    });
+    this.refreshUnsubscribe = FCM.on('refreshToken', (token) => {
+      console.log('token', token)
+      // fcm token may not be available on first load, catch it here
+    });
+
+    FCM.subscribeToTopic('/topics/foo-bar');
+    // FCM.unsubscribeFromTopic('/topics/foo-bar');
+  }
+
+  componentWillUnmount() {
+    // prevent leak
+    this.refreshUnsubscribe();
+    this.notificationUnsubscribe();
   }
 
   componentDidMount () {

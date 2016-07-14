@@ -1,6 +1,7 @@
 package com.ignitefcm;
 
 import com.facebook.react.ReactActivity;
+import com.evollu.react.fcm.FIRMessagingPackage;
 import com.oblador.vectoricons.VectorIconsPackage;
 import com.airbnb.android.react.maps.MapsPackage;
 import com.i18n.reactnativei18n.ReactNativeI18n;
